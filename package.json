@@ -1,0 +1,33 @@
+{
+  "name": "js-senc",
+  "version": "1.0.0",
+  "description": "js version of go-simple-encrypt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenet/js-senc.git"
+  },
+  "keywords": [
+    "senc"
+  ],
+  "author": "Juan Benet (@jbenet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenet/js-senc/issues"
+  },
+  "bin": {
+    "senc": "cli.js"
+  },
+  "homepage": "https://github.com/jbenet/js-senc#readme",
+  "dependencies": {
+    "libp2p-crypto": "^0.12.0",
+    "minimist": "^1.2.0",
+    "multibase": "^0.4.0",
+    "pull-stdio": "^1.0.0",
+    "pull-stream": "^3.6.1",
+    "pull-through": "^1.0.18",
+  }
+}
