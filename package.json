@@ -1,5 +1,5 @@
 {
-  "name": "js-senc",
+  "name": "senc",
   "version": "2.0.0",
   "description": "js version of go-simple-encrypt",
   "main": "index.js",
