@@ -3,8 +3,6 @@
 var senc = require('./index')
 var mb = require('multibase')
 var P = require('minimist')(process.argv.slice(2))
-var stdio = require('pull-stdio')
-var pull = require('pull-stream')
 
 var usage = `usage:  senc  -e -k <key> - encrypt stdin with aes
         senc  -d -k <key> - decrypt stdin with aes
@@ -72,10 +70,7 @@ if (P['key-gen']) {
     die('must use either -e or -d')
   }
 
-  var noOp = () => {}
-  pull(
-    stdio.stdin({encoding: 'binary'}),
-    S,
-    stdio.stdout(noOp)
-  )
+  process.stdin
+    .pipe(S)
+    .pipe(process.stdout)
 }

@@ -28,6 +28,7 @@
     "multibase": "^0.4.0",
     "pull-stdio": "^1.0.0",
     "pull-stream": "^3.6.1",
-    "pull-through": "^1.0.18"
+    "pull-through": "^1.0.18",
+    "through2": "^2.0.3"
   }
 }

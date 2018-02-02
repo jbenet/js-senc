@@ -1,3 +1,9 @@
+exports.KeyLength = 32 // aes256
+exports.BlockSize = 16
+exports.RandomKey = function() {
+  return crypto.randomBytes(KeyLength)
+}
+
 // this file is here because we need a sync create call.
 const ciphers = require('libp2p-crypto/src/aes/ciphers')
 
